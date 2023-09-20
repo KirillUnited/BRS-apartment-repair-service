@@ -2,8 +2,11 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: true },
+  head: {
+  },
   css: [
-    "vuetify/styles"
+    "vuetify/styles",
+      "@/assets/styles/main.scss"
   ],
   build: {
     transpile: ["vuetify"]
@@ -12,5 +15,5 @@ export default defineNuxtConfig({
     define: {
       "process.env.DEBUG": false
     }
-  }
+  },
 })

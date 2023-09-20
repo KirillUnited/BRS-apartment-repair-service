@@ -37,14 +37,24 @@
             >
                 <v-card-title>Top 10 Australian beaches</v-card-title>
             </v-img>
+            <v-hover open-delay="200" v-slot="{isHovering, props}">
+                <v-card-title :class="{'text-primary': isHovering}" v-bind="props">This is a title</v-card-title>
+            </v-hover>
             <v-card-item>
-                <v-card-title class="font-bold bg-red">This is a title</v-card-title>
-                <v-card-subtitle>This is a subtitle</v-card-subtitle>
+                <v-card-title class="font-weight-bold text-primary">This is a title</v-card-title>
+                <v-card-subtitle class="text-secondary">This is a subtitle</v-card-subtitle>
             </v-card-item>
 
             <v-card-text>
                 This is content
             </v-card-text>
+            <v-btn text="BUTTON" color="primary" class="text-secondary"></v-btn>
         </v-card>
     </div>
 </template>
+<style scoped>
+    .v-btn {
+        box-shadow: 19px 0px 25px 0px rgba(255, 255, 255, 0.11) inset, 0px 2px 15px 0px rgba(255, 255, 255, 0.41) inset;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+</style>
