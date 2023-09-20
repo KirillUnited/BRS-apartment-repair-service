@@ -33,12 +33,12 @@
                     class="align-end text-white"
                     height="200"
                     src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-                    cover
+                    cover=""
             >
                 <v-card-title>Top 10 Australian beaches</v-card-title>
             </v-img>
             <v-card-item>
-                <v-card-title>This is a title</v-card-title>
+                <v-card-title class="font-bold bg-red">This is a title</v-card-title>
                 <v-card-subtitle>This is a subtitle</v-card-subtitle>
             </v-card-item>
 
