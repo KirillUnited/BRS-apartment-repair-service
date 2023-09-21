@@ -1,14 +1,10 @@
 <template>
     <v-app>
-        <v-app-bar scroll-behavior="hide" flat="" height="110">
-            <Header/>
-        </v-app-bar>
+        <Header/>
         <v-main>
             <slot/>
         </v-main>
-        <v-footer>
-            <Footer/>
-        </v-footer>
+        <Footer/>
     </v-app>
 </template>
 
@@ -23,4 +19,7 @@
 </script>
 
 <style lang="scss" scoped>
+    .content {
+        flex: 1;
+    }
 </style>

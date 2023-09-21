@@ -1,18 +1,25 @@
 <template>
-    <v-btn class="text-secondary" color="primary" :text="text" size="large"></v-btn>
+    <v-btn class="btn text-secondary" color="primary" :text="text" :size="size">
+        <template v-slot:append v-if="icon">
+        </template>
+    </v-btn>
 </template>
 
 <script>
     export default {
         name: "Button",
         props: {
-            text: String
+            text: String,
+            size: String,
+            icon: {
+                defaultValue: null
+            }
         }
     }
 </script>
 
-<style scoped>
-    .v-btn {
+<style lang="scss" scoped>
+    .btn {
         font-size: 0.75rem;
         letter-spacing: 1.2px;
         background: linear-gradient(274deg, rgba(255, 255, 255, 0.00) -14.6%, rgba(255, 255, 255, 0.39) 39.52%, rgba(255, 255, 255, 0.00) 110.6%), linear-gradient(264deg, #FFC771 10.32%, #FFC858 98.17%);

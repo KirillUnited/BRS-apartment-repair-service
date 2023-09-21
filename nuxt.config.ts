@@ -12,6 +12,12 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"]
   },
+  modules: [
+    '@nuxt/image',
+  ],
+  image: {
+    dir: 'assets/images',
+  },
   vite: {
     define: {
       "process.env.DEBUG": false

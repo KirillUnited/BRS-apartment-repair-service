@@ -1,6 +1,6 @@
 <template>
-    <v-container>
-        <v-footer>
+    <v-footer>
+        <v-container>
             <v-row justify="center" no-gutters>
                 <v-btn
                         color="secondary"
@@ -14,8 +14,8 @@
                     {{ new Date().getFullYear() }} — <strong>Belremstroy</strong>
                 </v-col>
             </v-row>
-        </v-footer>
-    </v-container>
+        </v-container>
+    </v-footer>
 </template>
 
 <script>
