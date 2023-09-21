@@ -53,8 +53,5 @@
     </div>
 </template>
 <style scoped>
-    .v-btn {
-        box-shadow: 19px 0px 25px 0px rgba(255, 255, 255, 0.11) inset, 0px 2px 15px 0px rgba(255, 255, 255, 0.41) inset;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
+
 </style>
