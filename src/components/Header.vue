@@ -6,12 +6,12 @@
                     <img src="@/static/logo.svg" width="48" height="39"
                          alt="Ремонт жилой и коммерческой нежвижимости в Минске"/>
                 </NuxtLink>
-                <span class="logo-text text-secondary">Ремонт жилой и коммерческой<br/> нежвижимости в Минске</span>
+                <span class="logo-text text-secondary d-none d-md-flex">Ремонт жилой и коммерческой<br/> нежвижимости в Минске</span>
             </div>
             <v-spacer></v-spacer>
             <Socials :items="socials">
                 <template v-slot:text>
-                    <span class="socials-text text-secondary text-center">Связаться с нами<br/> через месседжеры</span>
+                    <span class="socials-text text-secondary text-center d-none d-lg-flex">Связаться с нами<br/> через месседжеры</span>
                 </template>
             </Socials>
             <v-spacer></v-spacer>

@@ -10,8 +10,8 @@
         >
             <v-container>
                 <div class="content">
-                    <h1 class="title text-secondary font-weight-light" v-html="title"></h1>
-                    <h2 class="subtitle text-secondary" v-html="subtitle"></h2>
+                    <h1 class="text-title title text-secondary" v-html="title"></h1>
+                    <h2 class="text-subtitle subtitle text-secondary" v-html="subtitle"></h2>
                     <Button text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
                 </div>
             </v-container>
@@ -105,8 +105,6 @@
     }
 
     .title {
-        font-size: 2.5rem;
-        line-height: normal;
         margin-bottom: 1.5rem;
 
         &:after {
@@ -121,9 +119,5 @@
 
     .subtitle {
         max-width: 400px;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 </style>

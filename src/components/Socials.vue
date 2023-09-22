@@ -19,7 +19,8 @@
         name: "Socials",
         props: {
             items: {
-                type: Array
+                type: Array,
+                defaultValue: []
             }
         }
     }
