@@ -15,7 +15,7 @@
     "sass": "^1.67.0"
   },
   "dependencies": {
-    "@nuxt/image": "^1.0.0-rc.2",
+    "@nuxt/image-edge": "^1.0.0-rc.2-28256179.a9cc6bd",
     "vuetify": "^3.4.0-alpha.1"
   }
 }

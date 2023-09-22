@@ -1,6 +1,13 @@
 <template>
     <section class="section">
-        <v-img :src="BgImage" cover="" max-height="600" class="align-center">
+        <v-img
+                :src="img(src, { height, quality: 100 })"
+                :srcset="_srcset.srcset"
+                cover=""
+                max-height="600"
+                class="align-center"
+                :lazy-src="img(src, { width: 100, quality: 70 })"
+        >
             <v-container>
                 <div class="content">
                     <h1 class="title text-secondary font-weight-light" v-html="title"></h1>
@@ -29,10 +36,31 @@
                 '                                class="text-primary font-weight-bold">под ключ в\n' +
                 '                Минске</span>',
             subtitle: 'Выполним ремонт точно в срок с гарантией по договору'
-        })
+        }),
     }
 </script>
-
+<script setup>
+    import {computed, useImage} from "../../.nuxt/imports";
+    import {defineProps} from "@vue/runtime-core";
+    const props = defineProps({
+        height: {type: [Number, String], default: 600},
+        src: {
+            type: String,
+            default: '/hero.png'
+        }
+    });
+    const img = useImage();
+    const _srcset = computed(() => {
+        return img.getSizes(props.src, {
+            sizes: 'xs:320px sm:768px md:1200px lg:1440',
+            modifiers: {
+                format: 'webp',
+                quality: 80,
+                height: props.height
+            }
+        })
+    });
+</script>
 <style lang="scss" scoped>
     .v-img {
         position: relative;

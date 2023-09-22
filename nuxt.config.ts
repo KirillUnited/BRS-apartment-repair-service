@@ -13,10 +13,17 @@ export default defineNuxtConfig({
     transpile: ["vuetify"]
   },
   modules: [
-    '@nuxt/image',
+    '@nuxt/image-edge',
   ],
   image: {
     dir: 'assets/images',
+    screens: {
+      'xs': 320,
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280,
+    },
   },
   vite: {
     define: {
