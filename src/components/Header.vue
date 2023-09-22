@@ -9,7 +9,11 @@
                 <span class="logo-text text-secondary">Ремонт жилой и коммерческой<br/> нежвижимости в Минске</span>
             </div>
             <v-spacer></v-spacer>
-            <Socials :items="socials"/>
+            <Socials :items="socials">
+                <template v-slot:text>
+                    <span class="socials-text text-secondary text-center">Связаться с нами<br/> через месседжеры</span>
+                </template>
+            </Socials>
             <v-spacer></v-spacer>
             <div class="d-flex align-center">
                 <div class="contacts d-flex flex-column text-right mr-5">
@@ -92,5 +96,10 @@
                 border-radius: 50%;
             }
         }
+    }
+
+    .socials-text {
+        font-size: 0.9rem;
+        line-height: normal;
     }
 </style>

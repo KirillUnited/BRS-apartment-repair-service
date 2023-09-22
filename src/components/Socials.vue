@@ -1,6 +1,8 @@
 <template>
     <div class="socials d-flex flex-wrap align-center justify-center">
-        <span class="socials-text text-secondary text-center">Связаться с нами<br/> через месседжеры</span>
+        <slot name="text">
+            <span class="socials-text text-secondary text-center">Связаться с нами<br/> через месседжеры</span>
+        </slot>
         <ul class="socials-list">
             <li v-for="item in items" class="socials-list-item" :key="item">
                 <NuxtLink to="https://www.google.com" class="d-flex align-center justify-center">
