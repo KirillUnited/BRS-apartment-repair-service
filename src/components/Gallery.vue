@@ -40,22 +40,22 @@
                 {
                     title: "Ресторан Ямал",
                     subtitle: "300 м2",
-                    cover: cover
+                    cover: "/gallery.png"
                 },
                 {
                     title: "Дизайн интерьера, ремонт жилой и коммерческой недвижимости под ключ в Минске",
                     subtitle: "300 м2",
-                    cover: cover
+                    cover: "/gallery.png"
                 },
                 {
                     title: "Ресторан Ямал",
                     subtitle: "300 м2",
-                    cover: cover
+                    cover: "/gallery.png"
                 },
                 {
                     title: "Ресторан Ямал",
                     subtitle: "300 м2",
-                    cover: cover
+                    cover: "/gallery.png"
                 },
             ]
         })

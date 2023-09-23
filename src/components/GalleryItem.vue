@@ -1,7 +1,7 @@
 <template>
     <v-img
-            :src="data.cover"
-            :lazy-src="data.cover"
+            :src="cover"
+            :lazy-src="cover"
             aspect-ratio="1.6"
             cover=""
             class="text-center cover"
@@ -34,12 +34,23 @@
 </template>
 
 <script>
+    import {useImage} from "../../.nuxt/imports";
+
     export default {
         name: "GalleryItem",
         props: {
             data: {
                 type: Object,
                 defaultValue: {}
+            }
+        },
+        setup(props) {
+            const img = useImage();
+            const src = props.data?.cover;
+            const cover = img(src, {quality: 50});
+
+            return {
+                cover
             }
         }
     }
