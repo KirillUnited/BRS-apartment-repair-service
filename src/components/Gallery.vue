@@ -19,6 +19,7 @@
         </v-container>
         <v-container class="d-flex justify-center actions">
             <Button text="получить консультацию" size="x-large"/>
+            <div class="actions-bg" :style="backgroundStyles"></div>
         </v-container>
     </section>
 </template>
@@ -26,11 +27,11 @@
 <script>
     import Button from "./Button";
     import GalleryItem from "./GalleryItem";
+    import {computed, useImage} from "../../.nuxt/imports";
 
     export default {
         name: "Gallery",
         components: {GalleryItem, Button},
-        props: {},
         data: () => ({
             title: "С <span class='text-primary font-weight-bold'>2015 года</span> отремонтировали </br>" +
                 "<span class='text-primary font-weight-bold'>более 160 объектов</span>",
@@ -57,11 +58,25 @@
                     cover: "/gallery.png"
                 },
             ]
-        })
+        }),
+        setup(props) {
+            const img = useImage();
+            const src = '/Paint-Cans-and-Brushes.png';
+            const backgroundStyles = computed(() => {
+                const imgUrl = img(src, {width: 200, height: 200})
+                return {backgroundImage: `url(\'${imgUrl}\')`}
+            });
+
+            return {
+                backgroundStyles
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/styles/utilities";
+
     .section {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -74,7 +89,22 @@
     .title {
         margin-bottom: 0.5rem;
     }
+
     .actions {
+        position: relative;
         padding-top: 40px;
+
+        &-bg {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+            width: getMinMax(100px, 300px);
+            height: getMinMax(100px, 300px);
+            background-position: center bottom 10px;
+            background-repeat: no-repeat;
+            background-size: 110%;
+            z-index: 10;
+        }
     }
 </style>
