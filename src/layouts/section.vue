@@ -1,6 +1,6 @@
 <template>
     <section class="section">
-        <v-container class="text-center heading">
+        <v-container class="text-center heading d-flex flex-column align-center">
             <h2 class="text-title title text-secondary">
                 <slot name="title"></slot>
             </h2>
@@ -25,8 +25,8 @@
 
 <style lang="scss" scoped>
     .section {
-        padding-top: 50px;
-        padding-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .heading {
@@ -34,6 +34,7 @@
     }
 
     .title {
+        max-width: 660px;
         margin-bottom: 0.5rem;
     }
 
