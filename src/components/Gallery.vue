@@ -1,10 +1,10 @@
 <template>
-    <section class="gallery">
+    <section class="section">
         <v-container class="text-center heading">
             <h2 class="text-title title text-secondary" v-html="title"></h2>
             <h3 class="text-subtitle subtitle text-secondary" v-html="subtitle"></h3>
         </v-container>
-        <v-container>
+        <v-container class="content">
             <v-row>
                 <v-col
                         v-for="item in gallery"
@@ -24,7 +24,6 @@
 </template>
 
 <script>
-    import cover from "../assets/images/gallery.png";
     import Button from "./Button";
     import GalleryItem from "./GalleryItem";
 
@@ -63,7 +62,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .gallery {
+    .section {
         padding-top: 80px;
         padding-bottom: 80px;
     }
@@ -76,6 +75,6 @@
         margin-bottom: 0.5rem;
     }
     .actions {
-        padding-top: 65px;
+        padding-top: 40px;
     }
 </style>

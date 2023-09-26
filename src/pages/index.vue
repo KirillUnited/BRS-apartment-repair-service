@@ -1,14 +1,16 @@
 <template>
     <Hero/>
     <Gallery/>
+    <Services/>
 </template>
-<style scoped>
-
-</style>
 <script>
     import Hero from "../components/Hero";
     import Gallery from "../components/Gallery";
+    import Services from "../components/Services";
     export default {
-        components: {Gallery, Hero}
+        components: {Services, Gallery, Hero}
     }
 </script>
+<style scoped>
+
+</style>
