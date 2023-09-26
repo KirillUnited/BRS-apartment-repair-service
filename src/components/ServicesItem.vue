@@ -15,7 +15,7 @@
 
         <v-img
                 cover
-                height="190"
+                height="200"
                 :src="image"
                 :lazy-src="image"
                 class="flex-0-0"

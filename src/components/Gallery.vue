@@ -44,18 +44,18 @@
                 },
                 {
                     title: "Дизайн интерьера, ремонт жилой и коммерческой недвижимости под ключ в Минске",
-                    subtitle: "300 м2",
-                    cover: "/gallery.png"
+                    subtitle: "60 м2",
+                    cover: "/service-1.png"
+                },
+                {
+                    title: "Ремонт  с нами - выгодно",
+                    subtitle: "120 м2",
+                    cover: "/service-2.png"
                 },
                 {
                     title: "Ресторан Ямал",
                     subtitle: "300 м2",
-                    cover: "/gallery.png"
-                },
-                {
-                    title: "Ресторан Ямал",
-                    subtitle: "300 м2",
-                    cover: "/gallery.png"
+                    cover: "/service-3.png"
                 },
             ]
         }),
