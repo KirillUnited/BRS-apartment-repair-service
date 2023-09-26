@@ -13,13 +13,20 @@
         </v-container>
         <v-container class="d-flex justify-center actions">
             <slot name="actions"></slot>
+            <Button v-if="CTA" text="получить консультацию" size="x-large"/>
         </v-container>
     </section>
 </template>
 
 <script>
     export default {
-        name: "Section"
+        name: "Section",
+        props: {
+            CTA: {
+                type: Boolean,
+                defaultValue: false
+            }
+        }
     }
 </script>
 
