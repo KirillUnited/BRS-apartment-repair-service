@@ -1,10 +1,13 @@
 <template>
-    <section class="section">
-        <v-container class="text-center heading">
-            <h2 class="text-title title text-secondary" v-html="title"></h2>
-            <h3 class="text-subtitle subtitle text-secondary" v-html="subtitle"></h3>
-        </v-container>
-        <v-container class="content">
+    <NuxtLayout name="section">
+        <template #title>
+            С <span class='text-primary font-weight-bold'>2015 года</span> отремонтировали <span
+                class='text-primary font-weight-bold'>более 160 объектов</span>
+        </template>
+        <template #subtitle>
+            От небольших студий до ресторанов на высоте 100 метров
+        </template>
+        <template #content>
             <v-row>
                 <v-col
                         v-for="item in gallery"
@@ -16,12 +19,11 @@
                     <GalleryItem :data="item"/>
                 </v-col>
             </v-row>
-        </v-container>
-        <v-container class="d-flex justify-center actions">
-            <Button text="получить консультацию" size="x-large"/>
+        </template>
+        <template #actions>
             <div class="actions-bg" :style="backgroundStyles"></div>
-        </v-container>
-    </section>
+        </template>
+    </NuxtLayout>
 </template>
 
 <script>
@@ -33,9 +35,6 @@
         name: "Gallery",
         components: {GalleryItem, Button},
         data: () => ({
-            title: "С <span class='text-primary font-weight-bold'>2015 года</span> отремонтировали </br>" +
-                "<span class='text-primary font-weight-bold'>более 160 объектов</span>",
-            subtitle: "От небольших студий до ресторанов на высоте 100 метров",
             gallery: [
                 {
                     title: "Ресторан Ямал",
@@ -77,23 +76,7 @@
 <style lang="scss" scoped>
     @import "../assets/styles/utilities";
 
-    .section {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .heading {
-        padding-bottom: 2.5rem;
-    }
-
-    .title {
-        margin-bottom: 0.5rem;
-    }
-
     .actions {
-        position: relative;
-        padding-top: 40px;
-
         &-bg {
             position: absolute;
             top: 50%;

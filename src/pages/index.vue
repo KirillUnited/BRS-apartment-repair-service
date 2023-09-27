@@ -1,6 +1,6 @@
 <template>
     <Hero/>
-    <Gallery/>
+    <Gallery :CTA="true"/>
     <Services/>
     <Calculator/>
     <Features :CTA="true"/>

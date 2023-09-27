@@ -6,13 +6,13 @@
         <v-banner height="100%">
             <template v-slot:prepend>
                 <v-avatar v-if="item.image"
-                        color="primary"
-                        size="120"
+                          color="primary"
+                          size="120"
                 >
                     <v-img
                             cover
                             :src="image"
-                    :lazy-src="image"></v-img>
+                            :lazy-src="image"></v-img>
                 </v-avatar>
             </template>
             <v-banner-text class="text-secondary pr-0">
@@ -56,14 +56,16 @@
     .description {
         font-size: getMinMax(20px, 20px);
     }
-    @include less-xs(){
+
+    @include less-xs() {
         .v-banner {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1rem;
             text-align: center;
-            &>:first-child {
+
+            & > :first-child {
                 margin-inline-end: 0;
                 align-self: center;
             }

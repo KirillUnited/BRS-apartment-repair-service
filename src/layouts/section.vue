@@ -46,6 +46,7 @@
     }
 
     .actions {
+        position: relative;
         padding-top: 40px;
     }
 </style>
