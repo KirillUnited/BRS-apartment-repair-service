@@ -21,14 +21,12 @@
 
 <script>
     import Button from "./Button";
-    import BgImage from "../assets/images/hero.png";
     import SmetaImage from "../assets/images/smeta.png";
 
     export default {
         name: "Hero",
         components: {Button},
         data: () => ({
-            BgImage: BgImage,
             SmetaImage: SmetaImage,
             title: 'Дизайн интерьера, ремонт\n' +
                 '                        жилой и коммерческой\n' +

@@ -4,6 +4,7 @@
     <Services/>
     <Calculator/>
     <Features :CTA="true"/>
+    <CallSection/>
 </template>
 <script>
     import Hero from "../components/Hero";
@@ -11,9 +12,10 @@
     import Services from "../components/Services";
     import Calculator from "../components/Calculator";
     import Features from "../components/Features";
+    import CallSection from "../components/CallSection";
 
     export default {
-        components: {Features, Calculator, Services, Gallery, Hero}
+        components: {CallSection, Features, Calculator, Services, Gallery, Hero}
     }
 </script>
 <style scoped>
