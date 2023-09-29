@@ -15,7 +15,7 @@
                 <p class="cover-subtitle text-primary font-weight-bold text-truncate">
                     {{data.subtitle}}</p>
             </div>
-            <a href="#" class="text-shades-white cover-link mt-auto">Подробнее</a>
+            <a href="#" class="text-shades-white cover-link mt-auto align-self-center">Подробнее</a>
         </div>
         <template v-slot:placeholder>
             <v-row
