@@ -23,7 +23,8 @@
                         900-90-90</a>
                     <span class="contacts-text contacts-timeline text-secondary">Ежедневно с 10:00 до 22:00</span>
                 </div>
-                <Button text="ЗАКАЗАТЬ ЗВОНОК" size="large"></Button>
+<!--                <Button text="ЗАКАЗАТЬ ЗВОНОК" size="large"></Button>-->
+                <Modal/>
             </div>
         </v-container>
     </v-app-bar>
@@ -36,10 +37,11 @@
     import phone from "../assets/icons/phone.svg";
     import telegram from "../assets/icons/telegram.svg";
     import Socials from "./Socials";
+    import Modal from "./Modal";
 
     export default {
         name: "Header",
-        components: {Socials, Button},
+        components: {Modal, Socials, Button},
         data: () => ({
             socials: [
                 {

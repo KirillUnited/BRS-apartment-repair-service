@@ -15,6 +15,9 @@
                     <Button text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
                 </div>
             </v-container>
+            <svg class="arc arc-bottom" xmlns="http://www.w3.org/2000/svg" width="1400" height="67" viewBox="0 0 1400 67" fill="none">
+                <path d="M0 0C0 0 431.075 40.1343 708.021 40C982.612 39.8669 1410 0 1410 0V67H0V0Z" fill="white"/>
+            </svg>
         </v-img>
     </section>
 </template>

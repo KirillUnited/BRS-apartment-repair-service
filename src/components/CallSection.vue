@@ -116,20 +116,6 @@
         position: relative;
     }
 
-    .arc {
-        position: absolute;
-        left: 0;
-        width: 100%;
-
-        &-top {
-            top: 0;
-        }
-
-        &-bottom {
-            bottom: 0;
-        }
-    }
-
     .decor {
         position: absolute;
         left: 0;

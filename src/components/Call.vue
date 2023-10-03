@@ -31,9 +31,10 @@
                 ></v-text-field>
             </v-form>
         </v-card-text>
-        <v-card-actions>
+        <v-card-actions class="actions flex-column">
             <Button form="callForm" text="ЗАКАЗАТЬ БЕСПЛАТНЫЙ ЗАМЕР" block="" size="x-large" @click="submit"
                     :disabled="!valid"/>
+            <slot name="actions"></slot>
         </v-card-actions>
     </v-card>
 </template>
@@ -62,6 +63,9 @@
             submit() {
                 callForm.submit()
             }
+        },
+        mounted() {
+            console.log()
         }
     }
 </script>
@@ -74,5 +78,8 @@
 
     .subtitle {
         font-size: getMinMax(16px, 16px);
+    }
+    .actions{
+        gap: 16px;
     }
 </style>
