@@ -7,7 +7,7 @@
             <p class="subtitle">и мы перезвоним вам, чтобы назначить удобное время для замера</p>
         </v-card-item>
         <v-card-text>
-            <v-form method="post" action="/" id="callForm" v-model="valid">
+            <v-form method="post" action="/" id="callForm" v-model="valid" ref="callForm">
                 <v-text-field
                         label="Ваше имя"
                         variant="underlined"
@@ -61,7 +61,7 @@
         },
         methods: {
             submit() {
-                callForm.submit()
+                this.$refs.callForm.submit();
             }
         },
         mounted() {
