@@ -7,7 +7,7 @@
                 min-height="600"
                 :lazy-src="image"
         >
-            <svg class="arc arc-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 50" fill="none">
+            <svg class="arc arc-top d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 50" fill="none">
                 <path d="M1405 50C1405 50 973.925 9.86575 696.979 10C422.388 10.1331 -5.00012 50 -5.00012 50V-17L1405 -17V50Z"
                       fill="white"/>
             </svg>
@@ -38,12 +38,12 @@
                     </v-col>
                 </v-row>
                 <v-img
-                        class="decor d-none d-md-flex"
+                        class="decor d-none d-sm-flex"
                         :src="decor"
                         cover=""
                 ></v-img>
             </v-container>
-            <svg class="arc arc-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 137" fill="none">
+            <svg class="arc arc-bottom d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 137" fill="none">
                 <path d="M-5 0C-5 0 423.053 62.2745 700 62C974.591 61.7278 1405 0 1405 0V137H-5V0Z" fill="white"/>
             </svg>
         </v-img>
@@ -120,8 +120,8 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 300px;
-        height: 300px;
+        width: getMinMax(100px, 300px);
+        height: getMinMax(100px, 300px);
         z-index: 10;
     }
 </style>
