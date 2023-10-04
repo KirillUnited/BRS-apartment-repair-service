@@ -1,7 +1,7 @@
 <template>
     <v-dialog width="500">
         <template v-slot:activator="{ props }">
-            <Button v-bind="props" text="ЗАКАЗАТЬ ЗВОНОК" size="large"></Button>
+            <Button v-bind="props" :text="ctaBtnTitle" :size="ctaBtnSize"></Button>
         </template>
 
         <template v-slot:default="{ isActive }">
@@ -22,7 +22,11 @@
 
     export default {
         name: "Modal",
-        components: {Call}
+        components: {Call},
+        props: {
+            ctaBtnTitle: String,
+            ctaBtnSize: String,
+        }
     }
 </script>
 

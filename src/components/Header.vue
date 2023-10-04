@@ -23,8 +23,7 @@
                         900-90-90</a>
                     <span class="contacts-text contacts-timeline text-secondary">Ежедневно с 10:00 до 22:00</span>
                 </div>
-<!--                <Button text="ЗАКАЗАТЬ ЗВОНОК" size="large"></Button>-->
-                <Modal/>
+                <Modal cta-btn-title="ЗАКАЗАТЬ ЗВОНОК" cta-btn-size="large"></Modal>
             </div>
         </v-container>
     </v-app-bar>

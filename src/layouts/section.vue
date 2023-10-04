@@ -13,14 +13,16 @@
         </v-container>
         <v-container class="d-flex justify-center actions">
             <slot name="actions"></slot>
-            <Button v-if="CTA" text="получить консультацию" size="x-large"/>
+            <Modal v-if="CTA" cta-btn-title="получить консультацию" cta-btn-size="x-large"/>
         </v-container>
     </section>
 </template>
 
 <script>
+    import Modal from "../components/Modal";
     export default {
         name: "Section",
+        components: {Modal},
         props: {
             CTA: {
                 type: Boolean,
