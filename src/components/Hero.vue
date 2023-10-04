@@ -12,7 +12,7 @@
                 <div class="content">
                     <h1 class="text-title title text-secondary" v-html="title"></h1>
                     <h2 class="text-subtitle subtitle text-secondary" v-html="subtitle"></h2>
-                    <Button text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
+                    <Button href="/#callSection" text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
                 </div>
             </v-container>
             <svg class="arc arc-bottom d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 67" fill="none">

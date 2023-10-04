@@ -1,5 +1,5 @@
 <template>
-    <section class="section">
+    <section id="callSection" class="section">
         <v-img
                 :src="image"
                 :srcset="imageSrcset.srcset"
