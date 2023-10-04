@@ -1,5 +1,5 @@
 <template>
-    <section class="section">
+    <section :id="id" class="section">
         <v-container class="text-center heading d-flex flex-column align-center">
             <h2 class="text-title title text-secondary">
                 <slot name="title"></slot>
@@ -24,6 +24,7 @@
         name: "Section",
         components: {Modal},
         props: {
+            id: String,
             CTA: {
                 type: Boolean,
                 defaultValue: false

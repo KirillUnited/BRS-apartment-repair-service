@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="section">
+    <NuxtLayout id="gallery" name="section">
         <template #title>
             С <span class='text-primary font-weight-bold'>2015 года</span> отремонтировали <span
                 class='text-primary font-weight-bold'>более 160 объектов</span>
