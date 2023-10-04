@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="section">
+    <NuxtLayout id="features" name="section">
         <template #title>
             Почему нам <span class="text-primary font-weight-bold">доверяют?</span>
         </template>

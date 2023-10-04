@@ -18,12 +18,12 @@
                 {
                     title: 'Тарифы',
                     value: 2,
-                    href: "/",
+                    href: "/#services",
                 },
                 {
                     title: 'Калькулятор',
                     value: 3,
-                    href: "/",
+                    href: "/#calc",
                 },
                 {
                     title: 'Заказать замер',

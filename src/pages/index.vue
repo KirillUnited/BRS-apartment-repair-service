@@ -5,6 +5,7 @@
     <Calculator/>
     <Features :CTA="true"/>
     <CallSection/>
+    <Steps :CTA="true"/>
 </template>
 <script>
     import Hero from "../components/Hero";
@@ -13,9 +14,10 @@
     import Calculator from "../components/Calculator";
     import Features from "../components/Features";
     import CallSection from "../components/CallSection";
+    import Steps from "../components/Steps";
 
     export default {
-        components: {CallSection, Features, Calculator, Services, Gallery, Hero}
+        components: {Steps, CallSection, Features, Calculator, Services, Gallery, Hero}
     }
 </script>
 <style scoped>
