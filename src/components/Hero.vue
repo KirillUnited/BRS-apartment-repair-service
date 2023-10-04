@@ -12,23 +12,24 @@
                 <div class="content">
                     <h1 class="text-title title text-secondary" v-html="title"></h1>
                     <h2 class="text-subtitle subtitle text-secondary" v-html="subtitle"></h2>
-                    <Button text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
+                    <Button href="/#callSection" text="Рассчитать стоимость ремонта" size="x-large" :image="SmetaImage"></Button>
                 </div>
             </v-container>
+            <svg class="arc arc-bottom d-none d-md-flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 67" fill="none">
+                <path d="M0 0C0 0 431.075 40.1343 708.021 40C982.612 39.8669 1410 0 1410 0V67H0V0Z" fill="white"/>
+            </svg>
         </v-img>
     </section>
 </template>
 
 <script>
     import Button from "./Button";
-    import BgImage from "../assets/images/hero.png";
     import SmetaImage from "../assets/images/smeta.png";
 
     export default {
         name: "Hero",
         components: {Button},
         data: () => ({
-            BgImage: BgImage,
             SmetaImage: SmetaImage,
             title: 'Дизайн интерьера, ремонт\n' +
                 '                        жилой и коммерческой\n' +

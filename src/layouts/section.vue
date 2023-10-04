@@ -1,6 +1,6 @@
 <template>
-    <section class="section">
-        <v-container class="text-center heading">
+    <section :id="id" class="section">
+        <v-container class="text-center heading d-flex flex-column align-center">
             <h2 class="text-title title text-secondary">
                 <slot name="title"></slot>
             </h2>
@@ -13,20 +13,30 @@
         </v-container>
         <v-container class="d-flex justify-center actions">
             <slot name="actions"></slot>
+            <Modal v-if="CTA" cta-btn-title="получить консультацию" cta-btn-size="x-large"/>
         </v-container>
     </section>
 </template>
 
 <script>
+    import Modal from "../components/Modal";
     export default {
-        name: "Section"
+        name: "Section",
+        components: {Modal},
+        props: {
+            id: String,
+            CTA: {
+                type: Boolean,
+                defaultValue: false
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
     .section {
-        padding-top: 50px;
-        padding-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .heading {
@@ -34,10 +44,12 @@
     }
 
     .title {
+        max-width: 660px;
         margin-bottom: 0.5rem;
     }
 
     .actions {
+        position: relative;
         padding-top: 40px;
     }
 </style>

@@ -18,3 +18,17 @@ html {
 .text-subtitle {
     font-size: 1.5rem;
 }
+
+.arc {
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    &-top {
+        top: -1px;
+    }
+
+    &-bottom {
+        bottom: -1px;
+    }
+}

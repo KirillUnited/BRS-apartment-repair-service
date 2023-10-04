@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
     head: {},
     css: [
+        "@mdi/font/css/materialdesignicons.css",
         "vuetify/styles",
         "@/assets/styles/main.scss"
     ],

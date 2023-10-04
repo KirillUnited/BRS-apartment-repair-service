@@ -1,6 +1,6 @@
 <template>
     <div class="socials d-flex flex-wrap align-center justify-center">
-        <slot name="text">
+        <slot name="text" v-if="title">
             <span class="socials-text text-secondary text-center">Связаться с нами<br/> через месседжеры</span>
         </slot>
         <ul class="socials-list">
@@ -15,12 +15,35 @@
 </template>
 
 <script>
+    import insta from "../assets/icons/insta.svg";
+    import youtube from "../assets/icons/youtube.svg";
+    import phone from "../assets/icons/phone.svg";
+    import telegram from "../assets/icons/telegram.svg";
+
     export default {
         name: "Socials",
         props: {
+            title: Boolean,
             items: {
                 type: Array,
-                defaultValue: []
+                default: [
+                    {
+                        icon: insta,
+                        name: "Instagram"
+                    },
+                    {
+                        icon: youtube,
+                        name: "youtube"
+                    },
+                    {
+                        icon: phone,
+                        name: "phone"
+                    },
+                    {
+                        icon: telegram,
+                        name: "telegram"
+                    },
+                ]
             }
         }
     }
