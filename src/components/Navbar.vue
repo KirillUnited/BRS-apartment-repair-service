@@ -38,7 +38,7 @@
                 {
                     title: 'Контакты',
                     value: 7,
-                    href: null
+                    href: '/#contacts'
                 },
             ],
         }),
