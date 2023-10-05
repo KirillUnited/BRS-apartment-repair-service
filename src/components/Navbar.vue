@@ -33,7 +33,7 @@
                 {
                     title: 'Отзывы',
                     value: 6,
-                    href: null
+                    href: '/#testimonials'
                 },
                 {
                     title: 'Контакты',
