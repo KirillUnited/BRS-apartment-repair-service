@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="section">
+    <NuxtLayout id="services" name="section">
         <template #title>
             Предлагаем самые <span class="text-primary font-weight-bold">выгодные<br/>
         решения</span> для наших клиентов

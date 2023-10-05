@@ -1,16 +1,15 @@
 <template>
-    <NuxtLayout name="section">
+    <NuxtLayout id="features" name="section">
         <template #title>
             Почему нам <span class="text-primary font-weight-bold">доверяют?</span>
         </template>
         <template #content>
-            <v-row>
+            <v-row no-gutters="">
                 <v-col
                         v-for="item in features"
                         :key="item"
                         class=""
                         cols="12"
-                        md="6"
                 >
                     <FeaturesItem :item="item"/>
                 </v-col>
@@ -62,6 +61,10 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .v-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr));
+        gap: 40px 80px;
+    }
 </style>

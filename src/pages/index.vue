@@ -5,6 +5,10 @@
     <Calculator/>
     <Features :CTA="true"/>
     <CallSection/>
+    <Steps :CTA="true"/>
+    <Brands :CTA="true"/>
+    <Testimonials/>
+    <Answers/>
 </template>
 <script>
     import Hero from "../components/Hero";
@@ -13,9 +17,13 @@
     import Calculator from "../components/Calculator";
     import Features from "../components/Features";
     import CallSection from "../components/CallSection";
+    import Steps from "../components/Steps";
+    import Brands from "../components/Brands";
+    import Testimonials from "../components/Testimonials";
+    import Answers from "../components/Answers";
 
     export default {
-        components: {CallSection, Features, Calculator, Services, Gallery, Hero}
+        components: {Answers, Testimonials, Brands, Steps, CallSection, Features, Calculator, Services, Gallery, Hero}
     }
 </script>
 <style scoped>

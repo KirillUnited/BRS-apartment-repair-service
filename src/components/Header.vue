@@ -1,12 +1,7 @@
 <template>
     <v-app-bar scroll-behavior="hide" flat="" height="80">
         <v-container class="d-flex justify-space-between align-center">
-            <div class="logo d-flex align-center">
-                <NuxtLink to="/" class="d-flex">
-                    <img src="@/static/logo.svg" width="48" height="39"
-                         alt="Ремонт жилой и коммерческой нежвижимости в Минске"/>
-                </NuxtLink>
-            </div>
+            <Logo/>
             <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <Navbar class="d-none d-lg-flex flex-wrap"/>
             <v-spacer class="hidden-lg-and-up"></v-spacer>
@@ -42,10 +37,11 @@
     import Navbar from "./Navbar";
     import Socials from "./Socials";
     import Contacts from "./Contacts";
+    import Logo from "./Logo";
 
     export default {
         name: "Header",
-        components: {Contacts, Socials, Navbar, Modal, Button},
+        components: {Logo, Contacts, Socials, Navbar, Modal, Button},
         data: () => ({
             drawer: false,
         }),
