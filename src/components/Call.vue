@@ -78,7 +78,9 @@
     .subtitle {
         font-size: getMinMax(16px, 16px);
     }
-    .actions{
-        gap: 16px;
+
+    .actions {
+        gap: 1rem;
+        padding: 1rem 1rem 1.5rem;
     }
 </style>

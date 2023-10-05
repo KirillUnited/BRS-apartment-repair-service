@@ -8,11 +8,7 @@
             <v-btn class="position-absolute" style="top: 0; right: 0; z-index: 10" icon="$close" variant="text" @click="isActive.value = false">
                 <v-icon icon="$close"></v-icon>
             </v-btn>
-            <Call>
-                <template v-slot:actions>
-                    <v-btn block="" variant="text" @click="isActive.value = false">Закрыть</v-btn>
-                </template>
-            </Call>
+            <Call></Call>
         </template>
     </v-dialog>
 </template>
