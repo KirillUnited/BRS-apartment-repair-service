@@ -8,6 +8,7 @@
     <Steps :CTA="true"/>
     <Brands :CTA="true"/>
     <Testimonials/>
+    <Answers/>
 </template>
 <script>
     import Hero from "../components/Hero";
@@ -19,9 +20,10 @@
     import Steps from "../components/Steps";
     import Brands from "../components/Brands";
     import Testimonials from "../components/Testimonials";
+    import Answers from "../components/Answers";
 
     export default {
-        components: {Testimonials, Brands, Steps, CallSection, Features, Calculator, Services, Gallery, Hero}
+        components: {Answers, Testimonials, Brands, Steps, CallSection, Features, Calculator, Services, Gallery, Hero}
     }
 </script>
 <style scoped>
