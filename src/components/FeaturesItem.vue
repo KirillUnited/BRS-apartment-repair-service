@@ -1,6 +1,5 @@
 <template>
     <v-card
-            elevation="5"
             height="100%"
     >
         <v-banner height="100%">
@@ -55,6 +54,16 @@
 
     .description {
         font-size: getMinMax(20px, 20px);
+    }
+
+    .v-card {
+        background-color: #F9F9F9;
+        box-shadow: 0px 2px 24px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .v-banner {
+        border-bottom: none;
+        background-color: transparent;
     }
 
     @include less-xs() {

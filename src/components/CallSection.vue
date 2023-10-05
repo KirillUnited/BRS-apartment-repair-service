@@ -128,7 +128,7 @@
             bottom: 0;
             content: "";
             background: linear-gradient(180deg, #FFF 20%, rgba(255, 255, 255, 0) 86.67%);
-            z-index: 1;
+            z-index: -1;
         }
     }
 
