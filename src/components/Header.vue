@@ -2,12 +2,13 @@
     <v-app-bar scroll-behavior="hide" flat="" height="80">
         <v-container class="d-flex justify-space-between align-center">
             <Logo/>
-            <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text"
+                                @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <Navbar class="d-none d-lg-flex flex-wrap"/>
             <v-spacer class="hidden-lg-and-up"></v-spacer>
             <div class="d-flex align-center">
                 <div class="d-none d-md-flex">
-                    <Contacts class="text-right mr-5"/>
+                    <Contacts class="mr-5" tel="+7 (999) 900-90-90"/>
                 </div>
                 <Modal cta-btn-title="ЗАКАЗАТЬ ЗВОНОК" cta-btn-size="large"></Modal>
             </div>
@@ -25,7 +26,7 @@
                 <Socials></Socials>
             </v-list-item>
             <v-list-item>
-                <Contacts/>
+                <Contacts tel="+7 (999) 900-90-90" email="info@stroy.ru"/>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>

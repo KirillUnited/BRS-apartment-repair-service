@@ -35,11 +35,6 @@
                     value: 6,
                     href: '/#testimonials'
                 },
-                {
-                    title: 'Контакты',
-                    value: 7,
-                    href: '/#contacts'
-                },
             ],
         }),
     }
