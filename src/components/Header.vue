@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar scroll-behavior="fade-image elevate hide" height="80" color="transparent">
+    <v-app-bar absolute="" flat="" height="80" color="transparent">
         <v-container class="d-flex justify-space-between align-center">
             <Logo />
             <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text"

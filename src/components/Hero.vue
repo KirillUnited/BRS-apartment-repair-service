@@ -61,6 +61,7 @@
     });
 </script>
 <style lang="scss" scoped>
+@import "../assets/styles/utilities/";
     .v-img {
         position: relative;
 
@@ -118,5 +119,13 @@
 
     .subtitle {
         max-width: 400px;
+    }
+    
+    @include less-md(){
+        .content{
+            
+        padding-top: 80px;
+        padding-bottom: 40px;
+        }
     }
 </style>

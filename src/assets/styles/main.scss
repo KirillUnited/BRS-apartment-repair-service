@@ -1,3 +1,4 @@
+@import "utilities/";
 @import "base/fonts";
 
 html {
@@ -12,11 +13,11 @@ html {
 }
 
 .text-title {
-    font-size: 2.5rem;
+    font-size: getMinMax(28px, 40px);
 }
 
 .text-subtitle {
-    font-size: 1.5rem;
+    font-size: getMinMax(18px, 24px);
 }
 
 .arc {
