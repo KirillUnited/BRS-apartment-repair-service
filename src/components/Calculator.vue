@@ -13,8 +13,6 @@
 </template>
 
 <script>
-    import {computed, useImage} from "../../.nuxt/imports";
-
     export default {
         name: "Calculator",
         setup(props) {

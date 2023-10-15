@@ -29,7 +29,6 @@
 <script>
     import Button from "./Button";
     import GalleryItem from "./GalleryItem";
-    import {computed, useImage} from "../../.nuxt/imports";
 
     export default {
         name: "Gallery",

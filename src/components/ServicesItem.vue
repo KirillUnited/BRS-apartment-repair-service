@@ -42,7 +42,6 @@
 </template>
 
 <script>
-    import {useImage} from "../../.nuxt/imports";
     import Button from "./Button";
 
     export default {

@@ -25,7 +25,6 @@
 </template>
 
 <script>
-    import {computed, useImage} from "../../.nuxt/imports";
     import StepsItem from "./StepsItem";
 
     export default {

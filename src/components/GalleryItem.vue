@@ -34,8 +34,6 @@
 </template>
 
 <script>
-    import {useImage} from "../../.nuxt/imports";
-
     export default {
         name: "GalleryItem",
         props: {

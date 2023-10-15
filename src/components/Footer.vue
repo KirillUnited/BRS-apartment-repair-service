@@ -18,7 +18,7 @@
                 >
                     <div class="info d-flex flex-column">
                         <p class="info-title font-weight-bold text-secondary">Контактная информация</p>
-                        <Contacts tel="+7 (999) 900-90-90" email="info@stroy.ru"/>
+                        <Contacts tel="+375 (29) 900-90-90" email="info@stroy.by"/>
                     </div>
                 </v-col>
                 <v-col
@@ -26,7 +26,7 @@
                         lg="3"
                         class="d-flex flex-column align-center text-center"
                 >
-                    <Socials :items="socials" :title="true">
+                    <Socials :title="true">
                         <template v-slot:text>
                             <span class="socials-text text-secondary text-center font-weight-bold info-title">Мы в соцсетях</span>
                         </template>
@@ -81,5 +81,9 @@
 
     .socials {
         flex-direction: column;
+    }
+
+    .logo {
+        font-size: 0.875rem;
     }
 </style>
