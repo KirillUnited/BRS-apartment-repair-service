@@ -13,10 +13,9 @@ export default defineNuxtConfig({
         transpile: ["vuetify"]
     },
     modules: [
-        '@nuxt/image-edge',
+        '@nuxt/image',
     ],
     image: {
-        provider: "ipxStatic",
         dir: 'assets/images',
         format: ["avif", "webp"],
     },

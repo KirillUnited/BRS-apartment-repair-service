@@ -52,7 +52,6 @@
 </template>
 
 <script>
-    import {computed, useImage} from "../../.nuxt/imports";
     import Call from "./Call";
     import decor from "../assets/images/Surveyor.png";
 

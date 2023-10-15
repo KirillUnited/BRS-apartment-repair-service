@@ -20,8 +20,6 @@
 </template>
 
 <script>
-    import {computed} from "../../.nuxt/imports";
-
     export default {
         name: "Brands",
         setup(props) {

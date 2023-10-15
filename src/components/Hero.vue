@@ -4,7 +4,7 @@
                 :src="img(src, { height, quality: 100 })"
                 :srcset="_srcset.srcset"
                 cover=""
-                max-height="600"
+                max-height="650"
                 class="align-center"
                 :lazy-src="img(src, { width: 100, quality: 70 })"
         >
@@ -41,10 +41,8 @@
     }
 </script>
 <script setup>
-    import {computed, useImage} from "../../.nuxt/imports";
-    import {defineProps} from "@vue/runtime-core";
     const props = defineProps({
-        height: {type: [Number, String], default: 600},
+        height: {type: [Number, String], default: 650},
         src: {
             type: String,
             default: '/hero.png'
