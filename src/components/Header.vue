@@ -1,19 +1,20 @@
 <template>
-    <v-app-bar absolute="" flat="" height="80" color="transparent">
-        <v-container class="d-flex justify-space-between align-center">
-            <Logo />
-            <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text"
-                @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-            <Navbar class="d-none d-lg-flex flex-wrap" />
-            <v-spacer class="hidden-lg-and-up"></v-spacer>
-            <div class="d-flex align-center">
-                <div class="d-none d-md-flex">
-                    <Contacts class="mr-5" tel="+375 (29) 900-90-90" />
-                </div>
-                <Modal cta-btn-title="ЗАКАЗАТЬ ЗВОНОК" cta-btn-size="large"></Modal>
+    <!-- <v-app-bar absolute="" flat="" height="80" color="transparent"> -->
+    <!-- </v-app-bar> -->
+
+    <v-container class="d-flex justify-space-between align-center">
+        <Logo />
+        <v-app-bar-nav-icon class="hidden-lg-and-up text-secondary" variant="text"
+            @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        <Navbar class="d-none d-lg-flex flex-wrap" />
+        <v-spacer class="hidden-lg-and-up"></v-spacer>
+        <div class="d-flex align-center">
+            <div class="d-none d-md-flex">
+                <Contacts class="mr-5" tel="+375 (29) 900-90-90" />
             </div>
-        </v-container>
-    </v-app-bar>
+            <Modal cta-btn-title="ЗАКАЗАТЬ ЗВОНОК" cta-btn-size="large"></Modal>
+        </div>
+    </v-container>
     <v-navigation-drawer app v-model="drawer" temporary elevation="5">
         <Navbar class="text-center" />
         <v-list class="navbar-contacts d-flex flex-column align-center">
@@ -46,6 +47,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .logo {
     gap: 0.5rem;
 
