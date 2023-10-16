@@ -10,59 +10,27 @@
                     :modules="modules"
                     :slides-per-view="1"
                     :space-between="70"
-                    :navigation="{ clickable: true }"
                     :autoplay="{
-      delay: 5000,
-      disableOnInteraction: false,
-    }"
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }"
                     pagination
             >
-                <swiper-slide>
+                <swiper-slide v-for="item in items">
                     <v-card
-                            elevation="5"
+                            elevation="10"
                     >
                         <v-banner
-                                avatar="https://cdn.vuetifyjs.com/images/john-smirk.png"
+                                :avatar="item.avatar"
+                                lines="three"
+                                stacked=""
                         >
                             <v-banner-text>
-                                Banner with three lines of text. One or two lines is preferable. Three lines should be
-                                considered the absolute maximum length on desktop in order to keep messages short and
-                                actionable.
+                                {{ item.text }}
                             </v-banner-text>
-                        </v-banner>
-                    </v-card>
-                </swiper-slide>
-                <swiper-slide>
-                    <v-card
-                            elevation="5"
-                    >
-                        <v-banner
-                                avatar="https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"
-                        >
-                            <v-banner-text>
-                                ui-avatars.com is a service that you can use to get placeholder profile pictures. This
-                                service is slightly different to the other services, because it returns the initials of
-                                the user rather than a picture of a human, character or object.
-
-                                If you’re using Laravel Jetstream in your projects, you’ll might have already come
-                                across this. It uses this service to fetch a default profile picture if a user hasn’t
-                                already uploaded one. You can check the code where it’s used
-                            </v-banner-text>
-                        </v-banner>
-                    </v-card>
-                </swiper-slide>
-                <swiper-slide>
-                    <v-card
-                            elevation="5"
-                    >
-                        <v-banner
-                                avatar="https://actomrussia.ru/images/2020/11/16/2816616767.jpg"
-                        >
-                            <v-banner-text>
-                                If you’re using Laravel Jetstream in your projects, you’ll might have already come
-                                across this. It uses this service to fetch a default profile picture if a user hasn’t
-                                already uploaded one. You can check the code where it’s used
-                            </v-banner-text>
+                            <template v-slot:actions>
+                               A. Last Name
+                            </template>
                         </v-banner>
                     </v-card>
                 </swiper-slide>
@@ -73,9 +41,8 @@
 
 <script>
     import {Swiper, SwiperSlide} from 'swiper/vue';
-    import {Navigation, Pagination, A11y, Autoplay} from 'swiper/modules';
+    import {Pagination, A11y, Autoplay} from 'swiper/modules';
     import 'swiper/css';
-    import 'swiper/css/navigation';
     import 'swiper/css/autoplay';
     import 'swiper/css/pagination';
 
@@ -85,9 +52,25 @@
             Swiper,
             SwiperSlide,
         },
+        data: ()=>({
+            items: [
+                {
+                    avatar: "https://cdn.vuetifyjs.com/images/john-smirk.png",
+                    text: "Banner with three lines of text. One or two lines is preferable. Three lines should be considered the absolute maximum length on desktop in order to keep messages short and actionable."
+                },
+                {
+                    avatar: "https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk",
+                    text: "ui-avatars.com is a service that you can use to get placeholder profile pictures. This service is slightly different to the other services, because it returns the initials of the user rather than a picture of a human, character or object. If you’re using Laravel Jetstream in your projects, you’ll might have already come across this. It uses this service to fetch a default profile picture if a user hasn’t already uploaded one. You can check the code where it’s used"
+                },
+                {
+                    avatar: "https://actomrussia.ru/images/2020/11/16/2816616767.jpg",
+                    text: "Banner with three lines of text. One or two lines is preferable. Three lines should be considered the absolute maximum length on desktop in order to keep messages short and actionable."
+                },
+            ]
+        }),
         setup() {
             return {
-                modules: [Navigation, A11y, Autoplay, Pagination],
+                modules: [A11y, Autoplay, Pagination],
             };
         },
     }
@@ -97,8 +80,9 @@
     .swiper {
         --swiper-navigation-color: var(--color-secondary);
         --swiper-pagination-color: var(--color-secondary);
+        --swiper-pagination-bottom: 0;
         max-width: 840px;
-        padding: 12px 52px;
+        padding: 12px 16px 42px;
     }
 
     .swiper-slide {
@@ -107,14 +91,13 @@
 
     .v-card {
         height: 100%;
+        background-color: #F9F9F9;
     }
 
     .v-banner {
         width: auto;
         border-bottom: none;
-
-        &-text {
-            padding-right: 8px;
-        }
+        background-color: transparent;
+        padding-right: 1rem;
     }
 </style>
