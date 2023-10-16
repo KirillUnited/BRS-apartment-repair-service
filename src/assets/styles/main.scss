@@ -1,9 +1,14 @@
 @import "utilities/";
 @import "base/fonts";
 
+:root {
+    --color-primary: #FFC771;
+    --color-secondary: #593F0D;
+}
+
 html {
-    font-family: 'Gilroy', sans-serif;
-    color: #593F0D;
+    font-family: "Gilroy", sans-serif;
+    color: var(--color-secondary);
 }
 
 .text-title,

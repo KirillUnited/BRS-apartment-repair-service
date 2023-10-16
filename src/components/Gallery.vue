@@ -8,13 +8,14 @@
             От небольших студий до ресторанов на высоте 100 метров
         </template>
         <template #content>
-            <v-row>
+            <v-row justify="center">
                 <v-col
                         v-for="item in gallery"
                         :key="item"
                         class="d-flex child-flex"
                         cols="12"
                         sm="6"
+                        xl="4"
                 >
                     <GalleryItem :data="item"/>
                 </v-col>

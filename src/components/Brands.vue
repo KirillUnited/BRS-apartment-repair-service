@@ -4,6 +4,9 @@
             Используем только лучшие метериалы от <span class="text-primary font-weight-bold">80+</span> Мировых
             производителей
         </template>
+        <template #subtitle>
+            Некоторые из них:
+        </template>
         <template #content>
             <div class="d-flex justify-center">
                 <v-img

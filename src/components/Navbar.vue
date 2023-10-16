@@ -44,14 +44,14 @@ export default {
     background-color: transparent;
 
     &-item {
-        color: #593F0D;
+        color: var(--color-secondary);
     }
 
     a {
         transition: all 150ms;
 
         &:hover {
-            color: #FFC771;
+            color: var(--color-primary);
         }
     }
 }
