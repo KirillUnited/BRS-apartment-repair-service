@@ -1,19 +1,19 @@
 <template>
     <section :id="id" class="section">
         <v-container class="text-center heading d-flex flex-column align-center">
-            <h2 class="text-title title text-secondary">
+            <h2 v-if="$slots.title" class="text-title title text-secondary">
                 <slot name="title"></slot>
             </h2>
-            <h3 class="text-subtitle subtitle text-secondary">
+            <h3 v-if="$slots.subtitle" class="text-subtitle subtitle text-secondary">
                 <slot name="subtitle"></slot>
             </h3>
         </v-container>
-        <v-container class="content">
+        <v-container v-if="$slots.content" class="content">
             <slot name="content"></slot>
         </v-container>
-        <v-container class="d-flex justify-center actions">
+        <v-container v-if="($slots.actions || CTA)" class="d-flex justify-center actions">
             <slot name="actions"></slot>
-            <Modal v-if="CTA" cta-btn-title="получить консультацию" cta-btn-size="x-large"/>
+            <Modal v-if="CTA" cta-btn-title="получить консультацию" cta-btn-size="x-large" />
         </v-container>
     </section>
 </template>
@@ -22,7 +22,7 @@
     import Modal from "../components/Modal";
     export default {
         name: "Section",
-        components: {Modal},
+        components: { Modal },
         props: {
             id: String,
             CTA: {
@@ -34,22 +34,27 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/styles/utilities/";
+
     .section {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: getMinMax(28px, 40px);
+        padding-bottom: getMinMax(28px, 40px);
     }
 
     .heading {
-        padding-bottom: 2.5rem;
+        padding-bottom: getMinMax(24px, 40px);
     }
 
     .title {
         max-width: 660px;
-        margin-bottom: 0.5rem;
+
+        &+* {
+            margin-top: 1rem;
+        }
     }
 
     .actions {
         position: relative;
-        padding-top: 40px;
-    }
+        padding-top: getMinMax(28px, 40px);
+    }   
 </style>
