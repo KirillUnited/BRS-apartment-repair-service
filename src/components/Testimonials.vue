@@ -95,8 +95,8 @@
 
 <style lang="scss" scoped>
     .swiper {
-        --swiper-navigation-color: #593F0D;
-        --swiper-pagination-color: #593F0D;
+        --swiper-navigation-color: var(--color-secondary);
+        --swiper-pagination-color: var(--color-secondary);
         max-width: 840px;
         padding: 12px 52px;
     }

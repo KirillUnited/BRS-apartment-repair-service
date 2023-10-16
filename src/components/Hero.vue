@@ -112,7 +112,7 @@
             content: '';
             width: 100px;
             height: 3px;
-            background-color: #FFC771;
+            background-color: var(--color-primary);
             margin-top: 1.5rem;
         }
     }
