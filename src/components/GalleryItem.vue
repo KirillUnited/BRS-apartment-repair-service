@@ -55,14 +55,15 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/styles/utilities/";
     .cover {
         &-title,
         &-subtitle {
-            font-size: 2rem;
+            font-size: getMinMax(18px, 30px);
         }
 
         &-link {
-            font-size: 1.25rem;
+            font-size: getMinMax(14px, 20px);
         }
 
         &-content {

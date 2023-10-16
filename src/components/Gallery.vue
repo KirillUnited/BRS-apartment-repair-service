@@ -14,6 +14,8 @@
                         :key="item"
                         class="d-flex child-flex"
                         cols="12"
+                        sm="6"
+                        xl="4"
                 >
                     <GalleryItem :data="item"/>
                 </v-col>
@@ -74,9 +76,6 @@
 <style lang="scss" scoped>
     @import "../assets/styles/utilities";
 
-    .v-col {
-        max-width: 580px;
-    }
     .actions {
         &-bg {
             position: absolute;
