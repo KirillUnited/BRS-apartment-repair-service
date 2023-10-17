@@ -7,7 +7,7 @@
         <template #content>
             <div class="content">
                 <v-expansion-panels>
-                    <v-expansion-panel v-for="item in items" class="text-secondary" elevation="0" rounded="0">
+                    <v-expansion-panel v-for="(item, i) in items" class="text-secondary" elevation="0" rounded="0" :key="i">
                         <v-expansion-panel-title expand-icon="mdi-plus" collapse-icon="mdi-minus">
                             {{item.title}}
                         </v-expansion-panel-title>
