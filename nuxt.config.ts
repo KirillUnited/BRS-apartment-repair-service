@@ -3,7 +3,9 @@
 export default defineNuxtConfig({
     srcDir: 'src/',
     devtools: {enabled: true},
-    head: {},
+    head: {
+        
+    },
     css: [
         "@mdi/font/css/materialdesignicons.css",
         "vuetify/styles",
