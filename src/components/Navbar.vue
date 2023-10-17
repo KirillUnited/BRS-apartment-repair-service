@@ -1,6 +1,6 @@
 <template>
     <v-list class="navbar">
-        <v-list-item class="navbar-item" v-for="item in items" :title="item.title" link="" :href="item.href"></v-list-item>
+        <v-list-item class="navbar-item" v-for="(item, i) in items" :title="item.title" link="" :href="item.href" :key="i"></v-list-item>
     </v-list>
 </template>
 

@@ -16,7 +16,7 @@
                     }"
                     pagination
             >
-                <swiper-slide v-for="item in items">
+                <swiper-slide v-for="(item, i) in items" :key="i">
                     <v-card
                             elevation="10"
                     >
