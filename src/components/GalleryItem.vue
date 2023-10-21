@@ -8,15 +8,15 @@
             gradient="359deg, #1A1A1A 1.21%, rgba(26, 26, 26, 0.40) 99.86%"
             :alt="data.title"
     >
-        <div class="cover-content fill-height d-flex flex-column">
+        <NuxtLink to="/" class="cover-content fill-height d-flex flex-column text-decoration-none">
             <div class="mt-auto">
                 <h3 class="text-white cover-title font-weight-light text-truncate">
                     {{data.title}}</h3>
                 <p class="cover-subtitle text-primary font-weight-bold text-truncate">
                     {{data.subtitle}}</p>
             </div>
-            <a href="#" class="text-shades-white cover-link mt-auto align-self-center">Подробнее</a>
-        </div>
+            <span class="text-shades-white cover-link mt-auto align-self-center text-decoration-underline">Подробнее</span>
+        </NuxtLink>
         <template v-slot:placeholder>
             <v-row
                     class="fill-height ma-0"
