@@ -81,7 +81,7 @@
         --swiper-navigation-color: var(--color-secondary);
         --swiper-pagination-color: var(--color-secondary);
         --swiper-pagination-bottom: 0;
-        max-width: 840px;
+        max-width: 1000px;
         padding: 12px 16px 42px;
     }
 
