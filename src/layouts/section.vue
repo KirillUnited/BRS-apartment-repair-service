@@ -42,7 +42,7 @@
     }
 
     .heading {
-        padding-bottom: getMinMax(24px, 40px);
+        padding-bottom: getMinMax(20px, 40px);
     }
 
     .title {
