@@ -31,11 +31,11 @@
     @import "../assets/styles/utilities";
 
     .title {
-        font-size: getMinMax(24px, 24px);
+        font-size: getMinMax(20px, 24px);
     }
 
     .description {
-        font-size: getMinMax(20px, 20px);
+        font-size: getMinMax(16px, 20px);
     }
 
     .step {

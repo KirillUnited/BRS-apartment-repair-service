@@ -102,12 +102,12 @@
     }
 
     .title {
-        font-size: getMinMax(30px, 30px);
+        font-size: getMinMax(28px, 30px);
         margin-bottom: 0.75em;
     }
 
     .description {
-        font-size: getMinMax(20px, 20px);
+        font-size: getMinMax(16px, 20px);
 
         & > ul {
             padding-left: 1em;

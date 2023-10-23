@@ -16,13 +16,18 @@
         </div>
     </v-container>
     <v-navigation-drawer app v-model="drawer" temporary elevation="5">
+        <v-list class="d-flex flex-column align-center">
+            <v-list-item>
+                <Logo />
+            </v-list-item>
+        </v-list>
         <Navbar class="text-center" />
         <v-list class="navbar-contacts d-flex flex-column align-center">
             <v-list-item>
-                <Socials></Socials>
+                <Contacts tel="+375 (29) 900-90-90" email="info@stroy.by" />
             </v-list-item>
             <v-list-item>
-                <Contacts tel="+375 (29) 900-90-90" email="info@stroy.by" />
+                <Socials></Socials>
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
